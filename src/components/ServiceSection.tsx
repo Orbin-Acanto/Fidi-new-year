@@ -46,10 +46,10 @@ const ServiceCard: React.FC<{
     <div
       className={`flex flex-col ${
         isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
-      } gap-0`}
+      } gap-0 lg:min-h-[500px]`}
     >
-      <div className="relative w-full lg:w-1/2">
-        <div className="relative h-[400px] lg:h-[600px] overflow-hidden bg-black">
+      <div className="relative w-full lg:w-1/2 h-[400px] lg:h-auto">
+        <div className="relative h-full overflow-hidden bg-black">
           <div className="absolute inset-0">
             <img
               src={item.images[normalizedIndex]}
@@ -95,6 +95,7 @@ const ServiceCard: React.FC<{
                       ? "bg-primary w-8"
                       : "w-2 bg-white/50 hover:bg-white/80"
                   }`}
+                  aria-label={`Go to image ${idx + 1}`}
                 />
               ))}
             </div>
@@ -103,30 +104,39 @@ const ServiceCard: React.FC<{
       </div>
 
       <div className="flex w-full items-center bg-gray-50 lg:w-1/2">
-        <div className="w-full px-8 py-8 lg:px-16 lg:py-16">
-          <div className="mb-4 inline-flex bg-primary px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-white">
-            {item.pillLabel}
-          </div>
+        <div className="w-full px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-12 xl:px-16 xl:py-16">
+          {item.pillLabel && (
+            <div className="mb-4 inline-flex bg-primary px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-white">
+              {item.pillLabel}
+            </div>
+          )}
 
-          <h2 className="mb-6 text-3xl font-light text-gray-900 lg:text-4xl xl:text-5xl">
+          <h2 className="mb-4 text-2xl font-light text-gray-900 sm:text-3xl lg:mb-6 lg:text-4xl xl:text-5xl">
             {item.title}
           </h2>
+
           <p
-            className="text-base leading-relaxed text-gray-600 lg:text-lg"
+            className="text-sm leading-relaxed text-gray-600 sm:text-base lg:text-lg"
             dangerouslySetInnerHTML={{ __html: item.description }}
           />
-          <p className="mt-2 text-base leading-relaxed text-gray-600 lg:text-lg">
-            <b>{item.subTitle2}</b>
-          </p>
-          <p className="mb-8 text-base leading-relaxed text-gray-600 lg:text-lg">
-            {item.subDescription}
-          </p>
+
+          {item.subTitle2 && (
+            <p className="mt-2 text-sm leading-relaxed text-gray-600 sm:text-base lg:text-lg">
+              <b>{item.subTitle2}</b>
+            </p>
+          )}
+
+          {item.subDescription && (
+            <p className=" text-sm leading-relaxed text-gray-600 sm:text-base lg:text-lg">
+              {item.subDescription}
+            </p>
+          )}
 
           <motion.a
             href={item.buttonLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-block overflow-hidden border border-primary bg-transparent px-8 py-3 text-sm font-medium text-primary transition-colors duration-300 hover:text-white"
+            className="group relative mt-6 inline-block overflow-hidden border border-primary bg-transparent px-6 py-2.5 text-sm font-medium text-primary transition-colors duration-300 hover:text-white sm:px-8 sm:py-3"
             whileHover="hover"
           >
             <motion.span

@@ -2,15 +2,15 @@ export const serviceItems = [
   {
     title: "48 Wall Street",
     description:
-      "Make history this holiday season by hosting your event at New York City’s premier downtown venue. 48 Wall Street occupies three floors of the former Bank of New York & Trust Company Building. This unique space sets the stage for a truly spectacular evening, boasting preserved architectural details that channel the grandeur of the Gilded Age. Give your guests an experience wrapped in the luxury and prestige this holiday season.",
+      "Make history this New Year by hosting your event at New York City’s premier downtown venue. 48 Wall Street occupies three floors of the former Bank of New York & Trust Company Building. This extraordinary space sets the stage for a truly unforgettable evening, featuring preserved architectural details that reflect the grandeur of the Gilded Age. Give your guests an experience defined by luxury, prestige, and timeless elegance as you welcome the year ahead.",
     images: [
       "/service photo/48 Wall/1.jpg",
       "/service photo/48 Wall/2.jpg",
       "/service photo/48 Wall/3.jpg",
     ],
-    subTitle2: "Planning a New Year's Eve Celebration?",
+    subTitle2: "Planning a New Year's Celebration?",
     subDescription:
-      "Ring in the New Year at one of the most iconic buildings on one of the most iconic blocks in Manhattan’s Financial District. If you’re looking for a unique and historic venue, 48 Wall Street offers the perfect venue setting for an unforgettable New Year’s Eve celebration.",
+      "Ring in the New Year at one of the most iconic buildings on one of the most iconic blocks in Manhattan’s Financial District. For those seeking a distinctive and historic setting, 48 Wall Street offers the perfect backdrop for an elevated and unforgettable New Year’s Eve celebration.",
     buttonText: "Visit 48 Wall Street",
     buttonLink: "https://www.48wallnyc.com/holiday-events.html",
     pillLabel: "Venue",
@@ -18,7 +18,7 @@ export const serviceItems = [
   {
     title: "FiDi Banking Hall",
     description:
-      "Celebrate the holidays where history meets modern luxury. The FiDi Banking Hall, formerly the iconic Bank of Manhattan, invites you to host a truly legendary event in our majestic Banking Hall Ballroom. Featuring soaring 30-foot ceilings, ornate marble columns, and polished Travertine limestone flooring, this architectural masterpiece sets the stage for a dazzling experience. Whether you are planning an intimate milestone celebration or a grand corporate party, reserve this hidden gem today and give your guests a night of unparalleled elegance.",
+      "Celebrate the New Year where history meets modern luxury. The FiDi Banking Hall, formerly the iconic Bank of Manhattan, invites you to host a truly legendary New Year’s celebration in our majestic Banking Hall Ballroom. Featuring soaring 30-foot ceilings, ornate marble columns, and polished Travertine limestone flooring, this architectural masterpiece creates the perfect backdrop for an unforgettable night. Whether you are planning an intimate New Year’s gathering or a grand corporate celebration, reserve this hidden gem and give your guests a midnight experience defined by unparalleled elegance.",
     images: [
       "/service photo/FiDi Banking Hall/1.jpg",
       "/service photo/FiDi Banking Hall/2.jpg",
@@ -42,9 +42,9 @@ export const serviceItems = [
     pillLabel: "Culinary Experience",
   },
   {
-    title: "Holiday Event Enhancements",
+    title: "New Year Event Enhancements",
     description:
-      "Transform your holiday celebration into a fully immersive experience with our curated suite of event enhancements. Create instant memories with our <b>Alpine Ski Lift Chair</b>, a festive photo opportunity adorned with seasonal decor that transports guests straight to the slopes. For a touch of urban nostalgia, our <b>Vintage NYC Newspaper Stand</b> serves as a versatile focal point, perfect for distributing snacks or displaying custom-branded newspapers featuring your corporate logo. Finally, warm up the crowd with our charming wooden <b>Hot Cocoa Trolly</b>, where guests can customize their rich hot chocolate with whipped cream, marshmallows, and crushed peppermint. These interactive additions ensure that from the first photo to the final sip, your event is unforgettable.",
+      "Transform your New Year’s celebration into a fully immersive experience with our curated suite of event enhancements. Capture unforgettable moments with interactive photo opportunities designed to mark the start of a new year in style. Add a touch of iconic New York flair with our Vintage NYC Newspaper Stand, a versatile focal point perfect for late-night bites or custom-branded newspapers highlighting your company or countdown moment. Elevate the evening with our elegant Champagne Trolley, offering guests a celebratory toast at midnight. These interactive additions ensure that from the first photo to the final countdown, your New Year’s event is truly unforgettable.",
     images: [
       "/service photo/Hot Cocoa Cart/1.jpg",
       "/service photo/Hot Cocoa Cart/2.jpg",
@@ -55,9 +55,9 @@ export const serviceItems = [
     pillLabel: "Event Enhancement",
   },
   {
-    title: "Holiday Props and Decor",
+    title: "New Year Props and Decor",
     description:
-      "Bring the magic of the season to life with our full-service holiday decor and prop rentals. Whether you are looking to enhance an event or transform your own office into a winter wonderland, our team creates breathtaking scenic displays that capture the spirit of the holidays. We specialize in immersive setups featuring lush garland, twinkling lights, and rustic winter scenery, accented by playful props like snowmen and polar bears. Let us handle the heavy lifting and design, delivering a festive atmosphere that delights guests and employees alike.",
+      "Welcome the New Year with elevated decor and full-service prop rentals designed to transform any space into a celebratory environment. Whether you’re enhancing an event or refreshing your office for a New Year kickoff, our team creates striking scenic displays that capture the excitement of a fresh start. We specialize in immersive setups featuring elegant metallic accents, ambient lighting, and modern winter-inspired scenery, accented with statement props perfect for photo moments and countdown celebrations. Let us handle the design and installation, delivering a polished atmosphere that energizes guests and teams alike.",
     images: [
       "/service photo/Holiday Decor/1.jpg",
       "/service photo/Holiday Decor/2.jpg",
