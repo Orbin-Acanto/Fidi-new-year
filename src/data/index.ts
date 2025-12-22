@@ -12,6 +12,22 @@ export const serviceItems = [
     pillLabel: "Venue",
   },
   {
+    title: "Artistry",
+    description:
+      "Nestled on 145 acres in the heart of Long Island's Gold Coast, Artistry offers an unparalleled setting within the elegant Georgian-style Frick Estate at the Nassau County Museum of Art. This extraordinary venue invites guests to mingle amongst world-class art exhibitions, wander through formal English gardens and outdoor sculpture collections, and experience the timeless grandeur of a storied mansion. Whether hosting a fairy-tale wedding, milestone celebration, or corporate gathering, Artistry delivers an artful experience defined by breathtaking architecture, natural beauty, and museum-caliber elegance.",
+    images: [
+      "/service photo/Artistry/1.jpg",
+      "/service photo/Artistry/2.jpg",
+      "/service photo/Artistry/3.jpg",
+      "/service photo/Artistry/4.jpg",
+    ],
+    subDescription:
+      "From the glass-walled Tented Pavilion with panoramic views to the enchanting Formal Gardens and the historic Frick Estate Library, Artistry provides multiple stunning spaces to bring your vision to life. Every season reinvents the atmosphere across rolling lawns, meadows, and ponds—creating a spectacular celebration of nature itself.",
+    buttonText: "Visit Artistry",
+    buttonLink: "https://www.eventsatartistry.com/index.html",
+    pillLabel: "Venue",
+  },
+  {
     title: "Grazing With Grace",
     description:
       "Treat your guests to the ultimate in savory indulgence with a Grazing With Grace station. This upgrade offers a bountiful selection of fine cheeses, cured meats, seasonal fruits, and artisan breads. A professional attendant is on hand to assist guests in crafting the perfect custom charcuterie board. Grazing with Grace is a seamless blend of abundance and personal attention that is sure to be a highlight of the evening.",
@@ -44,7 +60,7 @@ export const serviceItems = [
     images: [
       "/service photo/Holiday Decor/1.jpg",
       "/service photo/Holiday Decor/2.jpg",
-      "/service photo/Holiday Decor/3.jpg",
+      "/service photo/Holiday Decor/3.png",
     ],
     buttonText: "Learn more",
     buttonLink: "https://www.eventproprentals.com/holiday/christmas",
