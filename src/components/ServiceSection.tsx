@@ -12,6 +12,7 @@ interface ServiceItem {
   pillLabel?: string;
   subTitle2?: string;
   subDescription?: string;
+  id?: string;
 }
 
 interface ServiceSectionProps {
@@ -47,6 +48,7 @@ const ServiceCard: React.FC<{
       className={`flex flex-col ${
         isImageLeft ? "lg:flex-row" : "lg:flex-row-reverse"
       } gap-0 lg:min-h-[500px]`}
+      id={item.id}
     >
       <div className="relative w-full lg:w-1/2 h-[400px] lg:h-auto">
         <div className="relative h-full overflow-hidden bg-black">

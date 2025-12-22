@@ -3,29 +3,12 @@ export const serviceItems = [
     title: "48 Wall Street",
     description:
       "Make history this New Year by hosting your event at New York City’s premier downtown venue. 48 Wall Street occupies three floors of the former Bank of New York & Trust Company Building. This extraordinary space sets the stage for a truly unforgettable evening, featuring preserved architectural details that reflect the grandeur of the Gilded Age. Give your guests an experience defined by luxury, prestige, and timeless elegance as you welcome the year ahead.",
-    images: [
-      "/service photo/48 Wall/1.jpg",
-      "/service photo/48 Wall/2.jpg",
-      "/service photo/48 Wall/3.jpg",
-    ],
+    images: ["/service photo/48 Wall/2.jpg", "/service photo/48 Wall/3.jpg"],
     subTitle2: "Planning a New Year's Celebration?",
     subDescription:
       "Ring in the New Year at one of the most iconic buildings on one of the most iconic blocks in Manhattan’s Financial District. For those seeking a distinctive and historic setting, 48 Wall Street offers the perfect backdrop for an elevated and unforgettable New Year’s Eve celebration.",
     buttonText: "Visit 48 Wall Street",
     buttonLink: "https://www.48wallnyc.com/holiday-events.html",
-    pillLabel: "Venue",
-  },
-  {
-    title: "FiDi Banking Hall",
-    description:
-      "Celebrate the New Year where history meets modern luxury. The FiDi Banking Hall, formerly the iconic Bank of Manhattan, invites you to host a truly legendary New Year’s celebration in our majestic Banking Hall Ballroom. Featuring soaring 30-foot ceilings, ornate marble columns, and polished Travertine limestone flooring, this architectural masterpiece creates the perfect backdrop for an unforgettable night. Whether you are planning an intimate New Year’s gathering or a grand corporate celebration, reserve this hidden gem and give your guests a midnight experience defined by unparalleled elegance.",
-    images: [
-      "/service photo/FiDi Banking Hall/1.jpg",
-      "/service photo/FiDi Banking Hall/2.jpg",
-      "/service photo/FiDi Banking Hall/3.jpg",
-    ],
-    buttonText: "Visit FiDi Banking Hall",
-    buttonLink: "https://www.fidibankinghall.com/holiday-events.html",
     pillLabel: "Venue",
   },
   {
@@ -66,6 +49,7 @@ export const serviceItems = [
     buttonText: "Learn more",
     buttonLink: "https://www.eventproprentals.com/holiday/christmas",
     pillLabel: "Event Enhancement",
+    id: "enhancements",
   },
   {
     title: "New Year Celebrations",

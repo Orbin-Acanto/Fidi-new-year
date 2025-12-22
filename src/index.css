@@ -10,6 +10,14 @@
   --font-primary: "Gilda Display", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
 .parallax-bg {
   background-attachment: fixed;
 }

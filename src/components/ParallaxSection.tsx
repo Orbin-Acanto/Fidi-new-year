@@ -8,7 +8,7 @@ const ParallaxSection: React.FC = () => {
         h-[40vh]
         overflow-hidden
         parallax-bg
-        mt-24
+        mt-28
       "
     >
       <video
@@ -19,7 +19,10 @@ const ParallaxSection: React.FC = () => {
         playsInline
         preload="auto"
       >
-        <source src="/videos/vid3.mp4" type="video/mp4" />
+        <source
+          src="/freepik__movimento-de-camera-sobre-o-distrito-financeiro-de__3076.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <div className="absolute inset-0 bg-black/30"></div>
