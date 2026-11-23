@@ -22,13 +22,17 @@ interface ServiceSectionProps {
 const ServiceCard: React.FC<{
   item: ServiceItem;
   isImageLeft: boolean;
+  eager: boolean;
   currentImageIndex: number;
   onImageChange: (idx: number) => void;
-}> = ({ item, isImageLeft, currentImageIndex, onImageChange }) => {
+}> = ({ item, isImageLeft, eager, currentImageIndex, onImageChange }) => {
   const normalizedIndex = currentImageIndex % item.images.length;
   const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set([0]));
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    // Preload the next slide only once this card has scrolled into view.
+    if (!visible) return;
     const nextIndex = (normalizedIndex + 1) % item.images.length;
     if (!loadedImages.has(nextIndex)) {
       const img = new Image();
@@ -37,7 +41,7 @@ const ServiceCard: React.FC<{
         setLoadedImages((prev) => new Set([...prev, nextIndex]));
       };
     }
-  }, [normalizedIndex, item.images, loadedImages]);
+  }, [visible, normalizedIndex, item.images, loadedImages]);
 
   const goToImage = (idx: number) => {
     onImageChange(idx);
@@ -56,7 +60,11 @@ const ServiceCard: React.FC<{
             <img
               src={item.images[normalizedIndex]}
               className="h-full w-full object-cover"
-              alt={`${item.title} - Base`}
+              alt=""
+              loading={eager ? "eager" : "lazy"}
+              fetchPriority={eager ? "high" : "auto"}
+              onLoad={() => setVisible(true)}
+              decoding="async"
             />
           </div>
 
@@ -75,7 +83,9 @@ const ServiceCard: React.FC<{
               <motion.img
                 src={item.images[normalizedIndex]}
                 className="h-full w-full object-cover"
-                alt={`${item.title} - Image ${normalizedIndex + 1}`}
+                alt={`${item.title}, photo ${normalizedIndex + 1}`}
+                loading={eager ? "eager" : "lazy"}
+                decoding="async"
                 initial={{ scale: 1 }}
                 animate={{ scale: 1.05 }}
                 transition={{
@@ -180,6 +190,7 @@ export const ServiceSection: React.FC<ServiceSectionProps> = ({ items }) => {
             key={index}
             item={item}
             isImageLeft={isImageLeft}
+            eager={index === 0}
             currentImageIndex={currentImageIndex}
             onImageChange={setCurrentImageIndex}
           />

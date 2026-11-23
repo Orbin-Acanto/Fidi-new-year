@@ -60,7 +60,7 @@ export const serviceItems = [
     images: [
       "/service photo/Holiday Decor/1.jpg",
       "/service photo/Holiday Decor/2.jpg",
-      "/service photo/Holiday Decor/3.png",
+      "/service photo/Holiday Decor/3.webp",
     ],
     buttonText: "Learn more",
     buttonLink: "https://www.eventproprentals.com/holiday/christmas",
